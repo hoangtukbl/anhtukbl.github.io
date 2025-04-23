@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoang Anh Tu | Cyber Security Portfolio</title>
+  <style>
+    :root {
+      --bg-light: #f9f9f9;
+      --bg-dark: #1a1a1a;
+      --text-light: #333;
+      --text-dark: #f1f1f1;
+      --link: #0077cc;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      margin: 0;
+      padding: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    h1, h2, h3 {
+      color: inherit;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .toggle-button {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      padding: 0.4rem 0.8rem;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <h1>Hoang Anh Tu</h1>
+  <p>Ho Chi Minh, Vietnam | <a href="mailto:anhtu2k3.hoang@gmail.com">anhtu2k3.hoang@gmail.com</a> | 0777812203 | <a href="#">LinkedIn</a></p>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm currently a fourth-year student majoring in Information Technology, specializing in Computer Networks and Telecommunications with a focus on Cyber Security. 
+      My main areas of interest include Web Penetration Testing, Digital Forensics, and a touch of Cryptography.
+    </p>
+    <p>
+      I’m particularly drawn to the investigative and analytical aspects of cyber security. I enjoy diving deep into problems and learning how to think like both an attacker and a defender.
+      I'm currently looking for a Cyber Security internship where I can apply and grow my skills in real-world environments. I hope to learn directly from real-world challenges and contribute to securing systems and applications along the way.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>University of Science, Ho Chi Minh City (HCMUS)</strong><br>
+    BSc in Information Technology – Cyber Security Track (GPA: 7.24/10)<br>
+    2021 – Present</p>
+  </div>
+
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> C++, Python, Bash, JavaScript, PHP</li>
+      <li><strong>Tools:</strong> Burp Suite, Wireshark, Nmap, John the Ripper, Hashcat, FFUF, Gobuster, ExifTool</li>
+      <li><strong>OS:</strong> Kali Linux, Windows</li>
+      <li><strong>CTF Platforms:</strong> PicoCTF, OverTheWire, PortSwigger Labs, OWASP Juice Shop</li>
+      <li><strong>Networking:</strong> TCP/IP, Firewalls, VPN, DNS</li>
+      <li><strong>Version Control:</strong> Git, GitHub, Docker</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <p><strong>Web CTF: R3DCTF</strong> (Oct 2024 – Present)<br>
+      R3DCTF is a web exploitation-based CTF platform developed by a two-member team, inspired by PicoCTF and PortSwigger Labs. 
+      The platform is built on CTFd and containerized with Docker.<br>
+      <em>Tech:</em> PHP, TypeScript, JavaScript, Python, SQL, NoSQL, Docker<br>
+      <em>Repo:</em> <a href="https://github.com/anhtu2k3/R3DCTF" target="_blank">github.com/anhtu2k3/R3DCTF</a>
+    </p>
+
+    <p><strong>Web Security Labs & Writeups</strong> (Aug 2024 – Sep 2024)<br>
+      A collection of writeups on challenges from NetGarage.io and PortSwigger Labs. Topics include buffer overflows, SQLi, access control, XSS, and more.
+      <br><em>Tech:</em> Burp Suite, GDB, Radare2, Shell, C, JS, Python</p>
+  </div>
+
+  <div class="section">
+    <h2>CTF Experience</h2>
+    <ul>
+      <li><strong>TEXSAW CTF 2023:</strong> Top 22 / 234 (Team: 1hongu)</li>
+      <li><strong>HSCTF 10:</strong> Top 224 / 942 (Team: 1hongu)</li>
+      <li><strong>TSG CTF 2023:</strong> Top 147 / 560 (Team: 1hongu)</li>
+      <li>Also participated: ångstromCTF 2023, HCMUS CTF 2023, PlaidCTF 2025</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
